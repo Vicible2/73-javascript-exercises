@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+let text;
+let name  = prompt("What is your name?:", "Enter your name here");
+if (name == null || name == "") {
+    text = "Please try again.";
+} else {
+    text = "Hello, " + name + "!";
+}
+alert("Hello " + name + "!");
 
 })();

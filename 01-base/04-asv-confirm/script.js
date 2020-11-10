@@ -11,6 +11,16 @@
 
 (function() {
 
-    // your code here
+let age = prompt("How old are you?");
+let gender = prompt("What gender are you?");
+let name = prompt("What is your name?");
+let town = prompt("Where do you live?");
+
+if(confirm("Please confirm that you are: \n  " + age + " years old, " + gender + ", are called " + name + " and live in " + town + "?" )) {
+    alert("Thank you for submitting your info");
+} else {
+    alert("Please re-submit your information");
+}
+location.reload();
 
 })();

@@ -10,5 +10,6 @@
 // You will have time to focus on it later.
 
 (function() {
-    // your code here
+let start = 'Hello, world!';
+alert(start);
 })();

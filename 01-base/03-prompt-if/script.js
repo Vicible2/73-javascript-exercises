@@ -10,7 +10,13 @@
 // You will have time to focus on it later.
 
 (function() {
-
-  // your code here
+let text;
+let answer = prompt ("Do you want some cake?", "Yes or no?");
+if (answer == "yes" || answer == "Yes" || answer == "YES") {
+  text = "Congratulations!";
+} else {
+  text = "The cake is a lie!";
+}
+alert(text);
 
 })();
