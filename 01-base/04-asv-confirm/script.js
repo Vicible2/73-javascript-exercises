@@ -20,7 +20,8 @@ if(confirm("Please confirm that you are: \n  " + age + " years old, " + gender +
     alert("Thank you for submitting your info");
 } else {
     alert("Please re-submit your information");
+    location.reload();
 }
-location.reload();
+
 
 })();
