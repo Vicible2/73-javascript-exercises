@@ -12,9 +12,10 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
-
+        let i;
+        for (i = 1; i <= 21; i++) {
+            alert(i * i);
+        }
     });
 
 })();
