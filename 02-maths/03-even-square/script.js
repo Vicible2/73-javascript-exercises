@@ -10,12 +10,19 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    const array = [];
     document.getElementById("run").addEventListener("click", function() {
-        let i;
-        for (i = 1; i <= 21; i++) {
-            alert(i * i);
+      //  let i;
+     //   for (i = 1; i <= 21; i++) {
+      //      alert(i * i);
+
+      let i;
+      for (i = 1; i <= 21; i++){
+      array.push(i*i);
+      }
+      alert(array);
+      
         }
-    });
+    );
 
 })();
