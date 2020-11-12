@@ -12,7 +12,21 @@
 (function() {
 
     document.getElementById("red").addEventListener("click", function() {
-        document.body.style.backgroundColor = "red";
+        document.body.style.backgroundColor = "rgb(204, 51, 0)";
        
     });
+    document.getElementById("green").addEventListener("click", function() {
+        document.body.style.backgroundColor = "rgb(57, 172, 115)";
+    });
+    document.getElementById("yellow").addEventListener("click", function() {
+        document.body.style.backgroundColor = "rgb(255, 209, 26)";
+       
+    });
+     document.getElementById("blue").addEventListener("click", function() {
+       document.body.style.backgroundColor = "rgb(0, 134, 179)";
+    });
+    document.getElementById("home").addEventListener("click", function() {
+        document.body.style.backgroundColor = "rgb(22, 35, 46)";
+     });
+ 
 })();
