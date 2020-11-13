@@ -33,11 +33,4 @@
        let age = getAge(d,m,y);
        alert("Your birthday is on " + dob + "  you are " + age + " years old.");
 
-
-
-
-
-
-
-
 });
