@@ -11,28 +11,27 @@
 
  document.getElementById("run").addEventListener("click", function () {
 
-    function getAge(birth) {
-        let day = document.getElementById("dob-day").value;
-        let month = document.getElementById("dob-month").value;
-        let year = document.getElementById("dob-year").value;
-        const dob = day + "," + month + "," + year;
 
-        let today = new Date();
-        let d = today.getDay();
-        let m = today.getMonth();
-        let y = today.getFullYear();
+        let d = document.getElementById("dob-day").value;
+        let m = document.getElementById("dob-month").value;
+        let y = document.getElementById("dob-year").value;
 
-        console.log(dob);
+    function getAge(day,month,year) {
+        
+        
 
-        if (m == month && d >= day) return parseInt(y - year);
-        if (m == month && d < day) return parseInt(y - year - 1);
-        if (m > month) return parseInt(y - year);
-        if (m < month) return parseInt(y - year - 1);
+        let today = new Date()
+        let birthday = new Date(year, month, day);
+        return today.getFullYear() - birthday.getFullYear();
+
+
+       
 
     }
-    const bday = day + "," + month + "," + year;
-    let age = getAge("dob");
-    alert("Your birthday is " + bday + " and you are " + age + " years old.");
+    var dob = d + "/" + m + "/" + y;
+    
+       let age = getAge(d,m,y);
+       alert("Your birthday is on " + dob + "  you are " + age + " years old.");
 
 
 
