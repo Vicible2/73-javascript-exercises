@@ -9,8 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-
-    // your code here
-
-})();
+(function () {
+    let oneToHundred = [];
+    let randomNumber = Math.floor(Math.random() * 100);
+        if (i = 0, i < 10, i++) {
+            document.getElementById(`n-${i + 1}`).innerHTML = randomNumber;
+        }
+        // your code here
+    });
