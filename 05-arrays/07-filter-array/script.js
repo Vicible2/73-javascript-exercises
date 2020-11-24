@@ -88,7 +88,15 @@
             age: 81,
         },
     ];
-
+ document.querySelector('#run').addEventListener('click', function () {
+    function checkAge (people) {
+        return people.age >= 18;
+    }
+    let adults = people.find(checkAge);
+    console.log(adults);
+    
+  })
+    
     // your code here
 
 })();
