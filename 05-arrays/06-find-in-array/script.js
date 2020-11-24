@@ -88,7 +88,21 @@
             email: "gkeatche@google.fr",
         },
     ];
+   
+    document.querySelector('#run').addEventListener('click', function () {
 
-    // your code here
 
+        //Search for right person = Jean Dupont.
+        function findJean(person) { 
+            return person.firstname === 'Jean' && person.lastname === 'Dupont';
+         }
+        //log Jean Dupont email adress.
+         let rightPerson = people.find(findJean);
+         console.log(rightPerson.email);
+
+         //find Jean Dupont index & log in array;
+         let targetIndex = people.findIndex(findJean);
+         console.log(targetIndex);
+});
+ 
 })();
