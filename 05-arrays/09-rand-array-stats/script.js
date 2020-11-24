@@ -9,11 +9,26 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function () {
-    let oneToHundred = [];
-    let randomNumber = Math.floor(Math.random() * 100);
-        if (i = 0, i < 10, i++) {
-            document.getElementById(`n-${i + 1}`).innerHTML = randomNumber;
+(function() {
+
+    document.getElementById("run").addEventListener('click', function () {
+    
+        let array = [];
+        
+        //create random numbers between 1 and 100 for array
+        for (i = 0; i < 10; i++) {
+            let random = Math.floor(Math.random() * 100 );
+            array.push(random);
+            document.getElementById('n-' + (i+1)).innerHTML = random;
+
         }
-        // your code here
-    });
+
+        let min = ;
+        let max = ; 
+        let sum = ;
+        let avg = ;
+        console.log(array);
+    })
+    // your code here
+
+})();
