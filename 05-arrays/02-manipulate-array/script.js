@@ -23,7 +23,13 @@
         "raisin",
         "cerise",
     ];
+ document.querySelector('#run').addEventListener('click', function () {
+fruits.pop ();
+fruits.shift ();
+fruits.push("kiwi");
 
+console.log(fruits);
+ });
     // your code here
 
 })();
