@@ -25,7 +25,14 @@
         "grapes",
         "cherry",
     ];
-
+    document.querySelector('#run').addEventListener('click', function () { 
+    let contains = fruits.includes("apple");
+    if (fruits.includes("apple")) {
+        console.log("Yes there appears to be an apple inside!")
+    } else {
+        console.log("There appears to be no sign of an apple in the near vicinity!")
+    }
+});
     // your code here
 
 })();
