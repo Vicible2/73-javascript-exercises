@@ -9,7 +9,7 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     const people = [
         {
@@ -88,15 +88,16 @@
             age: 81,
         },
     ];
- document.querySelector('#run').addEventListener('click', function () {
-    function checkAge (people) {
-        return people.age >= 18;
-    }
-    let adults = people.find(checkAge);
-    console.log(adults);
-    
-  })
-    
-    // your code here
+    document.querySelector('#run').addEventListener('click', function () {
+       /* function checkAge(adult) {
+            return people.age >= 18;
+        } */
 
+        let adults = people.filter(function(adult) {
+            return adult.age > 18;
+        });
+        adults.forEach((person) => {
+            console.log(`${person.firstname} ${person.lastname}`);
+          });
+    });
 })();
