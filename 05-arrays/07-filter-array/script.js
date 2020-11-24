@@ -93,11 +93,11 @@
             return people.age >= 18;
         } */
 
-        let adults = people.filter(function(adult) {
-            return adult.age > 18;
+        let adultPeople = people.filter(function(adult) {
+            return adult.age >= 18;
         });
-        adults.forEach((person) => {
-            console.log(`${person.firstname} ${person.lastname}`);
+        adultPeople.forEach((person) => {
+            console.log(person.firstname + person.lastname);
           });
     });
 })();
