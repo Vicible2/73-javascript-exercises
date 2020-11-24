@@ -25,6 +25,9 @@
         "grap",
         "cherry",
     ];
+    document.querySelector('#run').addEventListener('click', function (){ 
+        fruits.forEach(fruit => console.log(fruit));
+    });
 
     // your code here
 
