@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.querySelector('#run').addEventListener('click', function (){
+        let rebel = {
+            brand: "Honda",
+            model: "CMX 1100",
+            year: "2021",
+            cc: "1084",
+            type: "twin-engine",
+        }
+
+        let me = {
+            name: "Manten",
+            surname: "Devillé",
+            age: "24",
+            city: "Oetingen",
+            country: "Belgium",
+            shoesize: "43"
+        };
+    })
 })();
