@@ -26,5 +26,9 @@
         os: "linux",
         user: null,
     };
+    const filledProps = Object.assign(computers, defaultProps);
+    document.querySelector('#run').addEventListener('click', function() {
+        console.log(filledProps);
+    })
     // your code here
 })();
