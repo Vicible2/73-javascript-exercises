@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.querySelector('#run').addEventListener('click', function (){
+    document.querySelector('#run').addEventListener('click', function () {
         let rebel = {
             brand: "Honda",
             model: "CMX 1100",
@@ -27,5 +27,8 @@
             country: "Belgium",
             shoesize: "43"
         };
+
+        console.dir(me);
+        console.log("Hello! My name is " + me.name + " " + me.surname + " and I'm " + me.age + " old. I live in " + me.city + " and am from " + me.country + ". Not that you'd care but just in case: my shoesize is " + me.shoesize + ".");
     })
 })();
