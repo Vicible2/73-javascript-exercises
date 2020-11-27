@@ -10,7 +10,10 @@
 // You will have time to focus on it later.
 
 (function() {
+let target = document.querySelectorAll('.target');
 
-    // your code here
+target.forEach(element => {
+element.innerHTML = "Owned hahah get rekt scrub!"
 
+})
 })();
