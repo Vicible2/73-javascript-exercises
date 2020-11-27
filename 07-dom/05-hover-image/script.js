@@ -18,7 +18,7 @@
     let oldImageSource = document.querySelector('img').getAttribute('src');
     console.log(oldImageSource);
 
-
+    
 
 
 }
