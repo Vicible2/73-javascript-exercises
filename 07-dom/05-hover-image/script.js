@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    //image variables
+    let newImageSource = document.querySelector('img').getAttribute('data-hover');
+    console.log(newImageSource);
 
-})();
+    let oldImageSource = document.querySelector('img').getAttribute('src');
+    console.log(oldImageSource);
+
+
+
+
+}
+)
+
+();
