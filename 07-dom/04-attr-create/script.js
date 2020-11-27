@@ -11,6 +11,13 @@
 
 (function() {
 
-    // your code here
+let sourceImg = document.getElementById('source').getAttribute('data-image');
+
+let target = document.getElementById('target');
+
+target.innerHTML = '<img src="' + sourceImg + '">';
+
+document.getElementById('source').remove();
+
 
 })();
