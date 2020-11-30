@@ -10,5 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+//making a function on click event, (this is already called callback), as it reacts only when calling it (by clicking)
+    document.querySelector('#run').addEventListener('click', function () {
+        //adding a new function inside the function (acts also as a variable) with 2 parameters: error and articles
+        window.lib.getPosts(function (error, articles) {
+            console.log(error, articles);
+        })
+
+    })
+
 })();
