@@ -38,5 +38,23 @@
         "sported",
     ]);
 
-    // your code here
+document.querySelector('#run').addEventListener('click', () => {
+
+    let adjectivesArr = Array.from(adjectives);
+    //console.log(adjectivesArr);
+    let randomBird = Math.floor(Math.random() * birds.length);
+    let randomAdj = Math.floor(Math.random() * adjectivesArr.length);
+
+    //  console.log(randomBird, randomAdj);
+
+    if(birds[randomBird]["num"] > 1) {
+        console.log(`A few ${adjectivesArr[randomAdj]} ${birds[randomBird]["name"]}s`);
+    } else {
+        console.log(`A ${adjectivesArr[randomAdj]} ${birds[randomBird]["name"]}`);
+    }
+
+
+
+})
+
 })();

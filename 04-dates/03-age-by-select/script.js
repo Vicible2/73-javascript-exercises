@@ -9,28 +9,28 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
- document.getElementById("run").addEventListener("click", function () {
+document.getElementById("run").addEventListener("click", function () {
 
 
-        let d = document.getElementById("dob-day").value;
-        let m = document.getElementById("dob-month").value;
-        let y = document.getElementById("dob-year").value;
+    let day = document.getElementById("dob-day").value;
+    let month = document.getElementById("dob-month").value;
+    let year = document.getElementById("dob-year").value;
 
-    function getAge(day,month,year) {
-        
-        
+    function getAge(day, month, year) {
 
-        let today = new Date()
+
+
+        let today = new Date();
         let birthday = new Date(year, month, day);
         return today.getFullYear() - birthday.getFullYear();
 
 
-       
+
 
     }
-    var dob = d + "/" + m + "/" + y;
-    
-       let age = getAge(d,m,y);
-       alert("Your birthday is on " + dob + "  you are " + age + " years old.");
+    var dateOfBirth = day + "/" + month + "/" + year;
+
+    let age = getAge(day, month, year);
+    alert("Your birthday is on " + dateOfBirth + "  you are " + age + " years old.");
 
 });

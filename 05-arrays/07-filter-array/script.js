@@ -99,5 +99,7 @@
         adultPeople.forEach((person) => {
             console.log(person.firstname + person.lastname);
           });
+        
+    
     });
 })();

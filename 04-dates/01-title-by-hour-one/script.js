@@ -9,10 +9,10 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    if(new Date ().getHours() < 18) {
-document.getElementById("target").innerHTML = "Hello";
+    if (new Date().getHours() < 18) {
+        document.getElementById("target").innerHTML = "Hello";
     } else {
         document.getElementById("target").innerHTML = "Good evening";
     }

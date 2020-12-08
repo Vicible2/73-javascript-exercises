@@ -11,6 +11,17 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        const givenyear = document.getElementById("year").value;
+        let spookyMonth = [];
+        let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
+        for (var month=0; month<12; month++) {
+            var givenDate = new Date(givenyear, month, 13);
+            if(givenDate.getDay() == 5){
+              spookyMonth.push(months[month]);
+           }
+        }
+        alert(spookyMonth);
+    })
 })();

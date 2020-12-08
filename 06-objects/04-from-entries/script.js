@@ -10,7 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    const keys = ["name", "species", "age", "gender", "color"];
-    const values = ["Skitty", "cat", 9, "female", "tabby"];
+    const keys = new Map(["name", "species", "age", "gender", "color"]);
+    const values = new Map(["Skitty", "cat", 9, "female", "tabby"]);
     // your code here
+    const objKeys = Object.fromEntries(keys);
+    const objValues = Object.fromEntries(values);
+    console.log(objKeys, objValues);
 })();

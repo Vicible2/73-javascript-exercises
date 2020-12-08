@@ -30,5 +30,6 @@
 
         console.dir(me);
         console.log("Hello! My name is " + me.name + " " + me.surname + " and I'm " + me.age + " old. I live in " + me.city + " and am from " + me.country + ". Not that you'd care but just in case: my shoesize is " + me.shoesize + ".");
+        console.dir(rebel);
     })
 })();
